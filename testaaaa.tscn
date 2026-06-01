@@ -7,3 +7,21 @@ script = ExtResource("1_l5vj1")
 
 [node name="DisplaySprite" type="Sprite2D" parent="." unique_id=1729626763]
 position = Vector2(543, 304)
+
+[node name="Slice1" type="Sprite2D" parent="." unique_id=548032315]
+position = Vector2(398, 477)
+
+[node name="Slice2" type="Sprite2D" parent="." unique_id=857080224]
+position = Vector2(543, 481)
+
+[node name="Slice3" type="Sprite2D" parent="." unique_id=1880730571]
+position = Vector2(689, 483)
+
+[node name="Slice4" type="Sprite2D" parent="." unique_id=1522361493]
+position = Vector2(398, 570)
+
+[node name="Slice5" type="Sprite2D" parent="." unique_id=322890904]
+position = Vector2(543, 572)
+
+[node name="Slice6" type="Sprite2D" parent="." unique_id=1887741173]
+position = Vector2(686, 572)
