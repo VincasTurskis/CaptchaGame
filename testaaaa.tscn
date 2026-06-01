@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://cwbswr742cwdp"]
 
+[ext_resource type="Script" uid="uid://cxdww1ly4baon" path="res://ImageSplitter.cs" id="1_l5vj1"]
+
 [node name="Node2D" type="Node2D" unique_id=291710085]
+script = ExtResource("1_l5vj1")
+
+[node name="DisplaySprite" type="Sprite2D" parent="." unique_id=1729626763]
+position = Vector2(543, 304)
