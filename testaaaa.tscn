@@ -1,27 +1,35 @@
 [gd_scene format=3 uid="uid://cwbswr742cwdp"]
 
 [ext_resource type="Script" uid="uid://cxdww1ly4baon" path="res://ImageSplitter.cs" id="1_l5vj1"]
+[ext_resource type="Shader" uid="uid://be6p2qurtfp8u" path="res://SliceOutline.gdshader" id="2_v32k0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6akin"]
+shader = ExtResource("2_v32k0")
+shader_parameter/outline_color = Color(0.63529414, 0, 0, 1)
+shader_parameter/outline_width = 2
 
 [node name="Node2D" type="Node2D" unique_id=291710085]
+position = Vector2(571, 299)
 script = ExtResource("1_l5vj1")
+sliceCountX = 3
+sliceCountY = 2
 
 [node name="DisplaySprite" type="Sprite2D" parent="." unique_id=1729626763]
-position = Vector2(543, 304)
 
 [node name="Slice1" type="Sprite2D" parent="." unique_id=548032315]
-position = Vector2(398, 477)
+material = SubResource("ShaderMaterial_6akin")
 
-[node name="Slice2" type="Sprite2D" parent="." unique_id=857080224]
-position = Vector2(543, 481)
+[node name="Slice2" type="Sprite2D" parent="." unique_id=1914293498]
+material = SubResource("ShaderMaterial_6akin")
 
-[node name="Slice3" type="Sprite2D" parent="." unique_id=1880730571]
-position = Vector2(689, 483)
+[node name="Slice3" type="Sprite2D" parent="." unique_id=910551412]
+material = SubResource("ShaderMaterial_6akin")
 
-[node name="Slice4" type="Sprite2D" parent="." unique_id=1522361493]
-position = Vector2(398, 570)
+[node name="Slice4" type="Sprite2D" parent="." unique_id=1030802259]
+material = SubResource("ShaderMaterial_6akin")
 
-[node name="Slice5" type="Sprite2D" parent="." unique_id=322890904]
-position = Vector2(543, 572)
+[node name="Slice5" type="Sprite2D" parent="." unique_id=1960414505]
+material = SubResource("ShaderMaterial_6akin")
 
-[node name="Slice6" type="Sprite2D" parent="." unique_id=1887741173]
-position = Vector2(686, 572)
+[node name="Slice6" type="Sprite2D" parent="." unique_id=657148797]
+material = SubResource("ShaderMaterial_6akin")
